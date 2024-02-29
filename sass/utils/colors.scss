@@ -6,4 +6,4 @@ $white-color: #ffffff;
 $black-color: #101010;
 $grey-color: #353535;
 $grey2-color: #eaeaea;
-$color-gradient: linear-gradient(to bottom, #ff79da -11.44%, #9356dc 123.93%);
+$color-gradient: linear-gradient(to top, $primary-color, $secondary-color);

@@ -1,0 +1,14 @@
+{
+  "name": "p4_barilone_matthieu",
+  "version": "1.0.0",
+  "description": "package",
+  "main": "index.js",
+  "scripts": {
+    "sass":"npx sass --watch style.scss:style.css"
+  },
+  "author": "Matthieu",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}

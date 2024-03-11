@@ -1,79 +1,79 @@
 @import "../utils/colors.scss";
 @import "../utils/mixin.scss";
 
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
 .restaurants {
   display: flex;
   flex-direction: column;
   gap: 18px;
   padding: 20px;
   box-sizing: border-box;
+  margin-top: 40px;
+}
+.restaurants__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants__card {
+  width: 100%;
+  height: 251px;
+  border-radius: 15px;
+  background: $white-color;
+}
+.restaurants__image {
+  width: 100%;
+  height: 68%;
+}
+.restaurants__image > img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+  height: 100%;
+}
+.restaurants__text {
+  height: 30%;
+  width: 100%;
+  padding: 12px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+a > h6 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  width: 100%;
+}
+a > img {
+  height: 32px;
+  object-fit: cover;
+  position: absolute;
+  top: 912px;
+  right: 28px;
+}
+a > .nouveau {
+  position: absolute;
+  top: 1182px;
+  right: 28px;
+  height: 32px;
+  object-fit: cover;
+}
+.heart {
+  display: flex;
+  justify-content: space-between;
 
-  .restaurants__title {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 0;
-  }
-  .restaurants__card {
-    width: 100%;
-    height: 251px;
-    border-radius: 15px;
-    background: $white-color;
-  }
-  .restaurants__image {
-    width: 100%;
-    height: 68%;
-  }
-  .restaurants__image > img {
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
-    height: 100%;
-  }
-  .restaurants__text {
-    height: 30%;
-    width: 100%;
-    padding: 12px;
-    gap: 5px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-  }
-  a > h6 {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-    width: 100%;
-  }
-  a > img {
-    height: 32px;
-    object-fit: cover;
-    position: absolute;
-    top: 912px;
-    right: 28px;
-  }
-  a > .nouveau {
-    position: absolute;
-    top: 1182px;
-    right: 28px;
-    height: 32px;
-    object-fit: cover;
-  }
-  .heart {
-    display: flex;
-    justify-content: space-between;
-  }
   a > p {
     font-size: 17px;
     font-weight: 300;
     margin: 0;
   }
-  .heart > .icon1 {
+  .icon1 {
     position: absolute;
     right: 40px;
     top: 1109px;
@@ -83,7 +83,7 @@
     top: 1095.5px;
     right: 37px;
   }
-  .heart > .icon2 {
+  .icon2 {
     position: absolute;
     right: 40px;
     top: 1380px;
@@ -93,7 +93,7 @@
     top: 1365.5px;
     right: 37px;
   }
-  .heart > .icon3 {
+  .icon3 {
     position: absolute;
     right: 40px;
     top: 1650px;
@@ -103,7 +103,7 @@
     top: 1635.5px;
     right: 37px;
   }
-  .heart > .icon4 {
+  .icon4 {
     position: absolute;
     right: 40px;
     top: 1918px;
@@ -118,6 +118,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
+    z-index: 2;
     transition-property: all;
     transition-duration: 600ms;
     height: 30px;
@@ -133,5 +134,4 @@
       transform: scale(2);
     }
   }
-  
 }

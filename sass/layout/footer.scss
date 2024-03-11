@@ -1,36 +1,35 @@
 @import "../utils/colors.scss";
 @import "../utils/mixin.scss";
 
-
 footer {
-    background: $black-color;
+  background: $black-color;
+  display: flex;
+  width: 100%;
+  padding: 22px 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  box-sizing: border-box;
+  color: $white-color;
+}
+.lien {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 16px;
+  font-weight: 400;
+
+  .gras {
+    font-weight: 500;
     display: flex;
-    width: 100%;
-    padding: 22px 25px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    box-sizing: border-box;
-    color: $white-color;
-  
-    .lien {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 7px;
-      font-size: 16px;
-      font-weight: 400;
-    }
-    .gras {
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 7px;
-    }
-    .gap {
-      gap: 11px;
-    }
-    .lien p {
-      margin: 0;
-    }
+    align-items: center;
+    gap: 7px;
   }
+  .gap {
+    gap: 11px;
+  }
+  p {
+    margin: 0;
+  }
+}

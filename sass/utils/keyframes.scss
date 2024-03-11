@@ -1,10 +1,39 @@
 @import "./colors.scss";
 
-@keyframes progress-heart {
-    from {
-        transform: scaleX(0);   
+@keyframes loader {
+    0%{
+        opacity: 2;
+        inset: 0;
     }
+    50% {
+        opacity: 1;
+        inset: 0;
+    }
+    
+    80% {
+        opacity: 0;
+        inset: 0;
+    }
+    100% {
+        opacity: 0;
+        inset: 1;
+    }
+}
+@keyframes spin {
     to {
-        transform: scaleX(1);
+        transform: rotate(360deg);
     }
+}
+@keyframes entries {
+    0%{
+        transform: scaleX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+@keyframes click {
+    
 }

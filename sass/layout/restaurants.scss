@@ -80,37 +80,37 @@ a > .nouveau {
   }
   .fas1 {
     position: absolute;
-    top: 1095.5px;
+    top: 1094.5px;
     right: 37px;
   }
   .icon2 {
     position: absolute;
     right: 40px;
-    top: 1380px;
+    top: 1380.6px;
   }
   .fas2 {
     position: absolute;
-    top: 1365.5px;
+    top: 1365.9px;
     right: 37px;
   }
   .icon3 {
     position: absolute;
     right: 40px;
-    top: 1650px;
+    top: 1650.5px;
   }
   .fas3 {
     position: absolute;
-    top: 1635.5px;
+    top: 1635.8px;
     right: 37px;
   }
   .icon4 {
     position: absolute;
     right: 40px;
-    top: 1918px;
+    top: 1919px;
   }
   .fas4 {
     position: absolute;
-    top: 1903.5px;
+    top: 1904px;
     right: 37px;
   }
   .fas {
@@ -127,6 +127,7 @@ a > .nouveau {
 
     &:hover {
       opacity: 1;
+      transform: scaleX(1.1);
     }
 
     &:active {

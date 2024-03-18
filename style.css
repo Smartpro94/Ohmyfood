@@ -61,7 +61,7 @@
   box-sizing: border-box;
 }
 .fonctionnnement__list .ellipse1 {
-  background: #9356dc;
+  background: #8d53d3;
   color: #ffffff;
   font-size: 14px;
   height: 24px;
@@ -74,7 +74,7 @@
   left: 15px;
 }
 .fonctionnnement__list .ellipse2 {
-  background: #9356dc;
+  background: #8d53d3;
   color: #ffffff;
   font-size: 14px;
   height: 24px;
@@ -87,7 +87,7 @@
   left: 15px;
 }
 .fonctionnnement__list .ellipse3 {
-  background: #9356dc;
+  background: #8d53d3;
   color: #ffffff;
   font-size: 14px;
   height: 24px;
@@ -101,7 +101,7 @@
 }
 
 .fa-store {
-  color: #9356dc;
+  color: #8d53d3;
 }
 
 .header_arrows {
@@ -201,13 +201,14 @@
 }
 .info .info__button {
   font-size: 16px;
-  background: linear-gradient(to top, #9356dc, #ff79da);
+  background: linear-gradient(to top, #8d53d3, #ff79da);
   border: none;
   height: 50px;
   color: #ffffff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 25px;
   transition: 200ms ease-in-out;
+  cursor: pointer;
   width: 218px;
 }
 .info .info__button:hover {
@@ -304,37 +305,37 @@ a > .nouveau {
 }
 .heart .fas1 {
   position: absolute;
-  top: 1095.5px;
+  top: 1094.5px;
   right: 37px;
 }
 .heart .icon2 {
   position: absolute;
   right: 40px;
-  top: 1380px;
+  top: 1380.6px;
 }
 .heart .fas2 {
   position: absolute;
-  top: 1365.5px;
+  top: 1365.9px;
   right: 37px;
 }
 .heart .icon3 {
   position: absolute;
   right: 40px;
-  top: 1650px;
+  top: 1650.5px;
 }
 .heart .fas3 {
   position: absolute;
-  top: 1635.5px;
+  top: 1635.8px;
   right: 37px;
 }
 .heart .icon4 {
   position: absolute;
   right: 40px;
-  top: 1918px;
+  top: 1919px;
 }
 .heart .fas4 {
   position: absolute;
-  top: 1903.5px;
+  top: 1904px;
   right: 37px;
 }
 .heart .fas {
@@ -347,14 +348,15 @@ a > .nouveau {
   transition-duration: 600ms;
   height: 30px;
   width: 30px;
-  background-image: linear-gradient(to top, #9356dc 20%, #ff79da 100%);
+  background-image: linear-gradient(to top, #8d53d3 20%, #ff79da 100%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  -moz-background-image: linear-gradient(to top, #9356dc, #ff79da);
+  -moz-background-image: linear-gradient(to top, #8d53d3, #ff79da);
 }
 .heart .fas:hover {
   opacity: 1;
+  transform: scaleX(1.1);
 }
 .heart .fas:active {
   opacity: 1;
@@ -409,7 +411,7 @@ footer {
   }
   100% {
     opacity: 0;
-    inset: 1;
+    inset: 100%;
   }
 }
 @keyframes spin {
@@ -444,15 +446,15 @@ footer {
 }
 .loader i {
   animation: spin 1s 2;
-  color: #9356dc;
+  color: #8d53d3;
 }
 
 body {
   background-color: #f6f6f6;
   font-family: "roboto";
   margin: auto;
-  min-width: 315px;
-  max-width: 1900px;
+  min-width: 320px;
+  max-width: 1920px;
 }
 
 a {
@@ -511,21 +513,21 @@ main {
 }
 .menu__title .fas {
   position: absolute;
-  right: 37px;
-  top: 35px;
+  right: 34.5px;
+  top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   transition-property: all;
   transition-duration: 600ms;
-  height: 30px;
-  width: 30px;
-  background-image: linear-gradient(to top, #9356dc 20%, #ff79da 100%);
+  height: 35px;
+  width: 35px;
+  background-image: linear-gradient(to top, #8d53d3 20%, #ff79da 100%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  -moz-background-image: linear-gradient(to top, #9356dc, #ff79da);
+  -moz-background-image: linear-gradient(to top, #8d53d3, #ff79da);
 }
 .menu__title .fas:active {
   opacity: 1;
@@ -533,6 +535,7 @@ main {
 }
 .menu__title .fas:hover {
   opacity: 1;
+  transform: scaleX(1.1);
 }
 
 .anim_one {
@@ -554,7 +557,8 @@ main {
   gap: 12px;
   opacity: 0;
 }
-.menu__info .menu__info__title {
+
+.menu-title {
   display: flex;
   justify-content: flex-start;
   border-bottom: 2px solid #99e2d0;
@@ -564,53 +568,90 @@ main {
   font-weight: 300;
   margin: 0;
 }
-.menu__info .menu__info__text {
+
+.menu-text {
   display: flex;
-  flex-direction: column;
-  padding: 17px 10px 17px 10px;
+  flex-direction: row;
+  padding: 17px 10px 16px 10px;
   align-items: flex-start;
-  gap: 5px;
+  justify-content: space-between;
+  gap: 20px;
   height: 44px;
   background: #ffffff;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  overflow: hidden;
 }
-.menu__info .menu__info__text:hover {
-  border: 1px solid;
+.menu-text:hover .button__click {
+  margin-right: -0.7rem;
+  transition: all 250ms;
 }
-.menu__info .menu__info__text h6 {
+.menu-text:active .button__click {
+  margin-right: -0.7rem;
+  transition: all 250ms;
+}
+
+.menu-text__one {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-text__one h6 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menu__info .menu__info__text div {
+.menu-text__one p {
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu-text__two {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  height: 19px;
-  padding: 0px;
-  font-size: 15px;
-  font-weight: 300;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 17px;
 }
-.menu__info .menu__info__text p {
-  margin: 0;
-}
-.menu__info .menu__info__text .prix {
+.menu-text__two .prix {
+  margin-top: 15px;
   font-size: 15px;
   font-weight: 700;
+}
+.menu-text__two .button__click {
+  width: 4.7rem;
+  height: 4.8rem;
+  margin-right: -5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  transition: all 0.5s;
+}
+.menu-text__two .button__click i {
+  color: white;
 }
 
 .info__button2 {
   font-size: 16px;
-  background: linear-gradient(to top, #9356dc, #ff79da);
+  background: linear-gradient(to top, #8d53d3, #ff79da);
   border: none;
   height: 50px;
   color: #ffffff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 25px;
   transition: 200ms ease-in-out;
+  cursor: pointer;
   width: 186px;
 }
 .info__button2:hover {
@@ -634,7 +675,7 @@ main {
     padding: 0;
   }
   .fonctionnnement__list .ellipse1 {
-    background: #9356dc;
+    background: #8d53d3;
     color: #ffffff;
     font-size: 14px;
     height: 24px;
@@ -648,7 +689,7 @@ main {
     left: 40px;
   }
   .fonctionnnement__list .ellipse2 {
-    background: #9356dc;
+    background: #8d53d3;
     color: #ffffff;
     font-size: 14px;
     height: 24px;
@@ -662,7 +703,7 @@ main {
     left: 35%;
   }
   .fonctionnnement__list .ellipse3 {
-    background: #9356dc;
+    background: #8d53d3;
     color: #ffffff;
     font-size: 14px;
     height: 24px;
@@ -710,7 +751,7 @@ main {
   .heart .fas1 {
     position: absolute;
     right: 54.6%;
-    top: 974.5px;
+    top: 974.3px;
   }
   .heart .icon2 {
     position: absolute;
@@ -720,7 +761,7 @@ main {
   .heart .fas2 {
     position: absolute;
     top: 975.5px;
-    right: 9.6%;
+    right: 9.8%;
   }
   .heart .icon3 {
     position: absolute;
@@ -740,7 +781,7 @@ main {
   .heart .fas4 {
     position: absolute;
     top: 1285.6px;
-    right: 9.6%;
+    right: 9.8%;
   }
   .heart .fas {
     display: flex;
@@ -751,14 +792,15 @@ main {
     transition-duration: 600ms;
     height: 30px;
     width: 30px;
-    background-image: linear-gradient(to top, #9356dc 20%, #ff79da 100%);
+    background-image: linear-gradient(to top, #8d53d3 20%, #ff79da 100%);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    -moz-background-image: linear-gradient(to top, #9356dc, #ff79da);
+    -moz-background-image: linear-gradient(to top, #8d53d3, #ff79da);
   }
   .heart .fas:hover {
     opacity: 1;
+    transform: scaleX(1.1);
   }
   .heart .fas:active {
     opacity: 1;
@@ -781,8 +823,12 @@ main {
   }
   .menu__title .fas {
     position: relative;
-    right: 56.8px;
-    top: 5.5px;
+    right: 59.2px;
+    top: 2.4px;
+  }
+  .menu__title .fas:active {
+    opacity: 1;
+    transform: scale(2);
   }
   .espacement {
     padding: 0px 50px 0px 50px;
@@ -811,7 +857,7 @@ main {
     padding: 50px 180px;
   }
   .fonctionnnement__list .ellipse1 {
-    background: #9356dc;
+    background: #8d53d3;
     color: #ffffff;
     font-size: 14px;
     height: 24px;
@@ -825,7 +871,7 @@ main {
     left: 170px;
   }
   .fonctionnnement__list .ellipse2 {
-    background: #9356dc;
+    background: #8d53d3;
     color: #ffffff;
     font-size: 14px;
     height: 24px;
@@ -839,7 +885,7 @@ main {
     left: 37%;
   }
   .fonctionnnement__list .ellipse3 {
-    background: #9356dc;
+    background: #8d53d3;
     color: #ffffff;
     font-size: 14px;
     height: 24px;

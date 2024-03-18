@@ -73,7 +73,7 @@
     .fas1 {
       position: absolute;
       right: 54.6%;
-      top: 974.5px;
+      top: 974.3px;
     }
     .icon2 {
       position: absolute;
@@ -83,7 +83,7 @@
     .fas2 {
       position: absolute;
       top: 975.5px;
-      right: 9.6%;
+      right: 9.8%;
     }
     .icon3 {
       position: absolute;
@@ -103,7 +103,7 @@
     .fas4 {
       position: absolute;
       top: 1285.6px;
-      right: 9.6%;
+      right: 9.8%;
     }
     .fas {
       display: flex;
@@ -118,6 +118,7 @@
 
       &:hover {
         opacity: 1;
+        transform: scaleX(1.1);
       }
 
       &:active {
@@ -143,8 +144,13 @@
     }
     .fas {
       position: relative;
-      right: 56.8px;
-      top: 5.5px;
+      right: 59.2px;
+      top: 2.4px;
+
+      &:active {
+        opacity: 1;
+        transform: scale(2);
+      }
     }
   }
   .espacement {

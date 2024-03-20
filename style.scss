@@ -18,6 +18,9 @@
   .fonctionnnement__title {
     padding-left: 0px;
   }
+  .fonctionnnement__text {
+    position: relative;
+  }
   .fonctionnnement__list {
     margin: 0;
     display: flex;
@@ -27,17 +30,29 @@
 
     .ellipse1 {
       @include number();
-      left: 40px;
-    }
-    .ellipse2 {
-      @include number();
-      left: 35%;
-    }
-    .ellipse3 {
-      @include number();
-      left: 65%;
+      left: 0;
     }
   }
+  .fonctionnnement__text {
+    position: relative; // Nécessaire pour positionner absolument l'ellipse à l'intérieur
+
+    .ellipse2 {
+      @include number(); // Mixin de style pour l'ellipse
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%); // Centrage de l'ellipse
+    }
+
+    .ellipse3 {
+      @include number(); // Mixin de style pour l'ellipse
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%); // Centrage de l'ellipse
+    }
+  }
+
   .restaurants {
     padding: 0px 60px;
     margin-bottom: 40px;
@@ -73,8 +88,8 @@
     }
     .fas1 {
       position: absolute;
-      right: 54.6%;
-      top: 974.3px;
+      right: 54.7%;
+      top: 974.5px;
     }
     .icon2 {
       position: absolute;
@@ -94,7 +109,7 @@
     .fas3 {
       position: absolute;
       top: 1285.6px;
-      right: 54.6%;
+      right: 54.7%;
     }
     .icon4 {
       position: absolute;
@@ -125,6 +140,7 @@
       &:active {
         opacity: 1;
         transform: scale(2);
+        padding: 0;
       }
     }
   }
@@ -183,29 +199,10 @@
   .fonctionnnement {
     padding: 50px 180px;
   }
-  
-  .fonctionnnement__list {
-
-    .ellipse1 {
-      @include number();
-      left: 170px;
-    }
-    .ellipse2 {
-      @include number();
-      left: 37%;
-    }
-    .ellipse3 {
-      @include number();
-      left: 63%;
-      right: 36%;
-    }
-  }
 
   .restaurants {
     padding: 0px 180px;
-    
   }
-  
 
   a > img {
     position: absolute;
@@ -220,10 +217,13 @@
 
   .heart {
     .icon1 {
-      right: 53.4%;
+      right: 16px;
+      margin-right: 53%;
     }
     .fas1 {
-      right: 53.2%;
+      right: 12.6px;
+     margin-right: 53%;
+      
     }
     .icon2 {
       right: 210px;
@@ -232,10 +232,12 @@
       right: 207px;
     }
     .icon3 {
-      right: 53.49%;
+      right: 16px;
+      margin-right: 53%;
     }
     .fas3 {
-      right: 53.3%;
+      right: 12.6px;
+      margin-right: 53%;
     }
     .icon4 {
       right: 210px;
@@ -244,8 +246,6 @@
       right: 207px;
     }
   }
-
-  
 
   .menu {
     padding: 40px 100px 0px 100px;

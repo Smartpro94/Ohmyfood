@@ -26,7 +26,7 @@
   width: 100%;
   box-sizing: border-box;
   gap: 15px;
-  height: 60%;
+  position: relative;
 }
 .fonctionnnement__list .fonctionnnement__text {
   gap: 40px;
@@ -71,7 +71,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 15px;
+  left: 4%;
+  transform: translateX(-50%);
 }
 .fonctionnnement__list .ellipse2 {
   background: #8d53d3;
@@ -84,7 +85,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 15px;
+  left: 4%;
+  transform: translateX(-50%);
 }
 .fonctionnnement__list .ellipse3 {
   background: #8d53d3;
@@ -97,7 +99,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 15px;
+  left: 4%;
+  transform: translateX(-50%);
 }
 
 .fa-store {
@@ -701,6 +704,9 @@ main {
   .fonctionnnement__title {
     padding-left: 0px;
   }
+  .fonctionnnement__text {
+    position: relative;
+  }
   .fonctionnnement__list {
     margin: 0;
     display: flex;
@@ -719,10 +725,12 @@ main {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 15px;
-    left: 40px;
+    left: 0;
   }
-  .fonctionnnement__list .ellipse2 {
+  .fonctionnnement__text {
+    position: relative;
+  }
+  .fonctionnnement__text .ellipse2 {
     background: #8d53d3;
     color: #ffffff;
     font-size: 14px;
@@ -733,10 +741,12 @@ main {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 15px;
-    left: 35%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
   }
-  .fonctionnnement__list .ellipse3 {
+  .fonctionnnement__text .ellipse3 {
     background: #8d53d3;
     color: #ffffff;
     font-size: 14px;
@@ -747,8 +757,10 @@ main {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 15px;
-    left: 65%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
   }
   .restaurants {
     padding: 0px 60px;
@@ -784,8 +796,8 @@ main {
   }
   .heart .fas1 {
     position: absolute;
-    right: 54.6%;
-    top: 974.3px;
+    right: 54.7%;
+    top: 974.5px;
   }
   .heart .icon2 {
     position: absolute;
@@ -805,7 +817,7 @@ main {
   .heart .fas3 {
     position: absolute;
     top: 1285.6px;
-    right: 54.6%;
+    right: 54.7%;
   }
   .heart .icon4 {
     position: absolute;
@@ -839,6 +851,7 @@ main {
   .heart .fas:active {
     opacity: 1;
     transform: scale(2);
+    padding: 0;
   }
   .menu {
     padding: 40px 60px 0px 60px;
@@ -890,49 +903,6 @@ main {
   .fonctionnnement {
     padding: 50px 180px;
   }
-  .fonctionnnement__list .ellipse1 {
-    background: #8d53d3;
-    color: #ffffff;
-    font-size: 14px;
-    height: 24px;
-    width: 24px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 15px;
-    left: 170px;
-  }
-  .fonctionnnement__list .ellipse2 {
-    background: #8d53d3;
-    color: #ffffff;
-    font-size: 14px;
-    height: 24px;
-    width: 24px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 15px;
-    left: 37%;
-  }
-  .fonctionnnement__list .ellipse3 {
-    background: #8d53d3;
-    color: #ffffff;
-    font-size: 14px;
-    height: 24px;
-    width: 24px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 15px;
-    left: 63%;
-    right: 36%;
-  }
   .restaurants {
     padding: 0px 180px;
   }
@@ -947,10 +917,12 @@ main {
     right: 195px;
   }
   .heart .icon1 {
-    right: 53.4%;
+    right: 16px;
+    margin-right: 53%;
   }
   .heart .fas1 {
-    right: 53.2%;
+    right: 12.6px;
+    margin-right: 53%;
   }
   .heart .icon2 {
     right: 210px;
@@ -959,10 +931,12 @@ main {
     right: 207px;
   }
   .heart .icon3 {
-    right: 53.49%;
+    right: 16px;
+    margin-right: 53%;
   }
   .heart .fas3 {
-    right: 53.3%;
+    right: 12.6px;
+    margin-right: 53%;
   }
   .heart .icon4 {
     right: 210px;

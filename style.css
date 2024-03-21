@@ -704,9 +704,6 @@ main {
   .fonctionnnement__title {
     padding-left: 0px;
   }
-  .fonctionnnement__text {
-    position: relative;
-  }
   .fonctionnnement__list {
     margin: 0;
     display: flex;

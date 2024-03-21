@@ -1,39 +1,38 @@
 @import "./colors.scss";
 
 @keyframes loader {
-    0%{
-        opacity: 2;
-        inset: 0;
-    }
-    50% {
-        opacity: 1;
-        inset: 0;
-    }
-    
-    80% {
-        opacity: 0;
-        inset: 0;
-    }
-    100% {
-        opacity: 0;
-        inset: 100%;
-    }
+  0% {
+    opacity: 2;
+    inset: 0;
+  }
+  50% {
+    opacity: 1;
+    inset: 0;
+  }
+
+  80% {
+    opacity: 0;
+    inset: 0;
+  }
+  100% {
+    opacity: 0;
+    inset: 100%;
+  }
 }
 @keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes entries {
-    0%{
-        transform: scaleX(0);
-        opacity: 1;
-    }
-    100% {
-        transform: scaleX(1);
-        opacity: 1;
-    }
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
 @keyframes click {
-    
 }

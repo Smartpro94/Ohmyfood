@@ -73,45 +73,26 @@ a > .nouveau {
     font-weight: 300;
     margin: 0;
   }
-  .icon1 {
-    position: absolute;
-    right: 40px;
-    top: 1109px;
-  }
+  
   .fas1 {
     position: absolute;
-    top: 1094.5px;
-    right: 37px;
-  }
-  .icon2 {
-    position: absolute;
-    right: 40px;
-    top: 1380.6px;
+    top: 1093.5px;
+    right: 29px;
   }
   .fas2 {
     position: absolute;
-    top: 1365.9px;
-    right: 37px;
-  }
-  .icon3 {
-    position: absolute;
-    right: 40px;
-    top: 1650.5px;
+    top: 1361.9px;
+    right: 29px;
   }
   .fas3 {
     position: absolute;
-    top: 1635.8px;
-    right: 37px;
-  }
-  .icon4 {
-    position: absolute;
-    right: 40px;
-    top: 1919px;
+    top: 1631.8px;
+    right: 29px;
   }
   .fas4 {
     position: absolute;
-    top: 1904px;
-    right: 37px;
+    top: 1900px;
+    right: 29px;
   }
   .fas {
     display: flex;
@@ -127,7 +108,6 @@ a > .nouveau {
 
     &:hover {
       opacity: 1;
-      transform: scaleX(1.1);
     }
 
     &:active {
